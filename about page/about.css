@@ -1,0 +1,387 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #003f47;
+  overflow-x: hidden;
+}
+/* ..........................header................................ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  z-index: 10;
+}
+
+nav .logo {
+  font-size: 22px;
+  letter-spacing: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a li {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 17px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links a:hover {
+  color: rgb(255, 202, 103);
+}
+.burger {
+  display: none;
+}
+.burger div {
+  background-color: rgb(0, 0, 0);
+  width: 40px;
+  height: 3px;
+  margin: 5px;
+  transition: 0.5s ease;
+}
+.top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+
+}
+/* .........................end of header..................................... */
+#illustration img {
+
+  mix-blend-mode: color-burn;
+  width: 500px;
+  height: 500px;
+  
+  
+}
+
+.text {
+  
+  width: 30%;
+  top: 10vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: color-burn;
+}
+#pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+/* .........................git works..............    */
+.gitwork {
+ 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+#gittext {
+ text-align: center;
+ font-size: 2.5rem;
+ color: white;
+}
+.work h3{
+  margin: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 20px;
+  background: transparent;
+  font-size: 18px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+button:hover {
+  background-color: rgb(128, 128, 75);
+  color: black;
+}
+.gitwork .work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 10px 0px 20px black;
+ 
+  
+}
+
+/* ..............................footer............... */
+.menub {
+  width: 100%;
+padding: 24px;
+  background: #003f47;
+
+  text-align: center;
+
+  box-shadow: 0px 5px 20px black;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.menub a {
+  text-decoration: none;
+}
+.menub li {
+  list-style: none;
+  color: white;
+}
+.menub li:hover {
+  color: #ffd30f;
+}
+
+.menub .links i:hover {
+  color: #ffd30f;
+}
+
+/* ...........................media query............................ */
+@media (max-width: 1200px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    width: 60%;
+  }
+  .nav-links li {
+    font-size: 15px;
+    color: black;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #pic {
+    opacity: 1;
+  }
+#illustration img{
+  width: 400px;
+}
+  .text {
+    margin: 50px;
+  }
+
+  /* ..........................git work....................... */
+  .gitwork {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 98%;
+    
+  }
+
+  #gittext {
+    
+   
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+  }
+  button {
+    border: none;
+    padding: 10px;
+    border-radius: 10%;
+    margin: 20px;
+    background: transparent;
+    font-size: 12px;
+    background-color: rgb(7, 1, 63);
+    color: white;
+  }
+  button:hover {
+    background-color: rgb(128, 128, 75);
+    color: black;
+  }
+  .gitwork .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    box-shadow: 10px 0px 20px black;
+     font-size: 15px;
+    
+  }
+  .gitwork .work img {
+    width: 200px;
+    height: 200px;
+  }
+  /* ...............................footer................. */
+  .menub {
+  
+    width: 100%;
+    height: 70vh;
+    background: #003f47;
+
+    text-align: center;
+    width: 100%;
+
+    box-shadow: 0px 5px 20px black;
+    top: 350vh;
+    padding: 0px;
+
+    letter-spacing: 5px;
+  }
+  .menub a {
+    text-decoration: none;
+  }
+  .menub li {
+    list-style: none;
+    color: white;
+  }
+  .menub li:hover {
+    color: #ffd30f;
+  }
+ 
+  .menub .links i:hover {
+    color: #ffd30f;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+  }
+  .nav-links li {
+    font-size: 15px;
+    color: black;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  #pic {
+    opacity: 1;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+ .top{
+   display: grid;
+   grid-template-columns:1fr;
+ }
+ .text{
+position: absolute;
+width: 20%;
+height: 20vh;
+top: 3%;
+left: 4%;
+mix-blend-mode: color-burn;
+ }
+  
+  #illustration{
+   width: 100%;
+   overflow: hidden;
+  
+  }
+
+
+  /* ..........................git work....................... */
+  .gitwork {
+   
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+  }
+
+ 
+  button:hover {
+    background-color: rgb(128, 128, 75);
+    color: black;
+  }
+  
+  .menub {
+  height: 30vh;
+    
+    background: #003f47;
+
+    text-align: center;
+   
+
+    box-shadow: 0px 5px 20px black;
+    
+    font-size: 10px;
+    padding: 20px;
+  }
+  .menub a {
+    text-decoration: none;
+  }
+  .menub li {
+    list-style: none;
+    color: white;
+  }
+  .menub li:hover {
+    color: #ffd30f;
+  }
+  
+  .menub .links i:hover {
+    color: #ffd30f;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
